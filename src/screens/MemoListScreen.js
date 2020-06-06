@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import MemoList from '../components/MemoList';
 import CircleButton from '../elements/CircleButton';
@@ -9,7 +10,9 @@ class MemoListScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <MemoList />
-                <CircleButton>+</CircleButton>
+                <CircleButton>
+                    <Icon name="plus" size={20} />
+                </CircleButton>
             </View>
         );
     }

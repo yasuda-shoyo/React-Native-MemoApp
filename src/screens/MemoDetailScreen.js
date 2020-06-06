@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
 import CircleButton from '../elements/CircleButton';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 class MemoDetailScreen extends React.Component {
     render() {
@@ -20,7 +22,9 @@ class MemoDetailScreen extends React.Component {
                     </Text>
                 </View>
 
-                <CircleButton color="white" style={styles.editButton}>+</CircleButton>
+                <CircleButton color="white" style={styles.editButton}>
+                    <Icon name="pencil" size={24} />
+                </CircleButton>
             </View>
         );
     }
